@@ -1,0 +1,127 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+body{
+  background-image: url("240_F_448098401_kWPDm50r34I3fVEPCJFp29OM8R5ILodN.jpg");
+	background-size: cover;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* background-image: url("240_F_448098401_kWPDm50r34I3fVEPCJFp29OM8R5ILodN.jpg"); */
+}
+
+.container {
+  height: 97vh;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: #0f0c29, #025149, #10396cbe;
+}
+.input{
+  height:30px;
+  width:150px;
+  border-radius: 30px;
+}
+.lab{
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.card {
+  border-radius: 50px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(rgba(70, 51, 237, 0.8), rgb(153, 0, 255), rgba(195, 79, 224, 0.8)), url("240_F_448098401_kWPDm50r34I3fVEPCJFp29OM8R5ILodN.jpg");
+  background-size: cover;
+  padding: 10px 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.drop_box {
+  margin: 10px 0;
+  
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 3px dotted #a3a3a3;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.drop_box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+
+.drop_box p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #a3a3a3;
+}
+
+.form input {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: #2e2e2e;
+}
+
+#sub{
+    margin: 10px;
+    background-color: #005af0;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+#sub:hover{
+  background-color: #ffffff;
+  color: #005af0;
+  padding: 10px 20px;
+  border: none;
+  outline: 1px solid #010101;
+  cursor: pointer;
+}
+
+#sub1{
+  margin: 10px;
+  background-color: #005af0;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+}
+
+#sub1:hover{
+background-color: #ffffff;
+color: #005af0;
+padding: 10px 20px;
+border: none;
+outline: 1px solid #010101;
+cursor: pointer;
+}

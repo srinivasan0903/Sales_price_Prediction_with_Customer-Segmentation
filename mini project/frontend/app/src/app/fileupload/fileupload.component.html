@@ -1,0 +1,66 @@
+<body>
+<script>
+    const dropArea = document.querySelector(".drop_box"),
+  button = dropArea.querySelector("button"),
+  dragText = dropArea.querySelector("header"),
+  input = dropArea.querySelector("input");
+let file;
+var filename;
+
+// button.onclick = () => {
+//   input.click();
+// };
+
+input.addEventListener("change", function (e) {
+  var fileName = e.target.files[0].name;
+  let filedata = `
+    <form action="" method="post">
+    <div class="form">
+    <h4>${fileName}</h4>
+    <input type="email" placeholder="Enter email upload file">
+    <button class="btn">Upload</button>
+    </div>
+    </form>`;
+  dropArea.innerHTML = filedata;
+});
+
+</script>
+<div class="container">
+    <div class="card">
+      <h3>Upload Data set</h3>
+      <br>
+      <br>
+      <div class="drop_box">
+
+        <header>
+          <h4>Select File here</h4>
+        </header>
+        <p>Files Supported: csv</p>
+        <input  type="file" id="choose-file" accept=".csv" (change)="onFileChanged($event)" required>
+        
+      </div>
+      
+      <br>
+      <div class="periodicity">
+        <label class="lab" for="periodicity">Periodicity :</label>
+        <select class="data" [(ngModel)]="selected" class="input">
+          <option value="week">Week</option>
+          <option value="month">Month</option>
+          <option value="year">Year</option>
+          <option value="day">Day</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label class="lab" for="periodicity">Enter time period :</label>
+      <input  class="input" type="text" placeholder="    Enter time period" name="period" value=''  required [(ngModel)]="predictvalue"/> 
+      <br>
+      <br>
+      <br>
+      <input type="submit" value="predict" class="btn-primary" id="sub" (click)="onpredict()"/>
+      <input type="submit" value="cluster" class="btn-primary" id="sub1" (click)="navigateToCluster()"/>
+      
+    </div>
+    </div>
+  </div>
+</body>
